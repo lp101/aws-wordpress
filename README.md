@@ -10,7 +10,9 @@ Wordpress on High-Availability AWS Infrastructure created with Terraform.
 
 2. Go inside terraform directory:
     `cd aws-wordpress`
+
 3. Setup your AWSCLI profile and AWS region in **variables.tfvars**
+
 4. Use Terraform commands to deploy/destroy your infrastructure for wordpress.
 
     `$ terraform init`
@@ -18,11 +20,15 @@ Wordpress on High-Availability AWS Infrastructure created with Terraform.
     `$ terraform apply`
 
     `$ terraform destroy`
+
+    The terraform command `terraform init` also prints the DNS beanstalk with which to access to the app.
+
 5. To deploy Wordpress run the deploy script:
     
     `bash deploy_prod.sh /path/to/aws-wordpress-code`
     
     The script deploy to AWS Beanstalk and exits when the application is ready specifying whether the deployment was successful or not.
+
 
 
 ## Infrastructure description
