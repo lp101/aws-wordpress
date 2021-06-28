@@ -46,3 +46,19 @@ output "endpoint" {
   description = "Fully qualified DNS name for the environment"
   value       = aws_elastic_beanstalk_environment.wordpressenv.cname
 }
+output "s3_bucket" {
+  description = "S3 Bucket used to deploy wordpress to AWS Beanstalk"
+  value       = aws_s3_bucket.wordpress-deploy.bucket
+}
+output "beanstalk_app_name" {
+  description = "Beanstalk App Name"
+  value       = aws_elastic_beanstalk_application.wordpressapp.name
+}
+output "beanstalk_env_name" {
+  description = "Beanstalk Env Name"
+  value       = aws_elastic_beanstalk_environment.wordpressenv.name
+}
+output "aws_profile" {
+  description = "AWS Profile used to deploy the infrastructure."
+  value       = var.profile
+}

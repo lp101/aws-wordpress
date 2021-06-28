@@ -18,3 +18,7 @@ variable "rds_username" {
   sensitive   = true
   default     = "administrator"
 }
+variable "aurora_replica_count" {
+  description = "Replica Count for Aurora mysql."
+  default     = 1
+}

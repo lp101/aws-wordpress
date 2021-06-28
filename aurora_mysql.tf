@@ -37,7 +37,7 @@ module "db" {
   instance_type  = "db.t3.medium"
   instance_type_replica = "db.t3.medium"
   apply_immediately   = true # for updating
-  replica_count  = 1
+  replica_count  = var.aurora_replica_count
 
   # Authentication
   iam_database_authentication_enabled = true
