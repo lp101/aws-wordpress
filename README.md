@@ -3,8 +3,11 @@ Wordpress on High-Availability AWS Infrastructure created with Terraform.
 
 ## Infrastructure creation and Wordpress deployment
 1. Checkout the infrastructure Terraform code and the wordpress code from:
+    
     `git clone https://github.com/lp101/aws-wordpress.git`
-    `https://github.com/lp101/aws-wordpress-code.git`
+    
+    `git clone https://github.com/lp101/aws-wordpress-code.git`
+
 2. Go inside terraform directory:
     `cd aws-wordpress`
 3. Setup your AWSCLI profile and AWS region in **variables.tfvars**
